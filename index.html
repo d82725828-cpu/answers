@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Экзамен по веб-разработке — 75 вопросов</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="logo">DANIEL<span>.</span> DEV EXAM</div><div class="tag">HTML • CSS • JavaScript • React • Redux</div></div>
+  <section id="start" class="card hero">
+    <div class="big">💻</div><h1>Экзамен по веб-разработке</h1>
+    <p>75 вопросов из 15 билетов. Проверь знания и узнай свой результат в конце.</p>
+    <p class="small">Выбирай один правильный ответ в каждом вопросе. Ответы и процент появятся после завершения.</p>
+    <button class="primary" id="startBtn">Начать тест</button>
+  </section>
+  <section id="quiz" class="card hidden">
+    <div class="progress-row"><span id="counter">Вопрос 1 из 75</span><span id="percent">0%</span></div>
+    <div class="track"><div class="bar" id="bar"></div></div>
+    <div class="small" id="category">Билет 1</div>
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <div class="actions"><button class="secondary" id="prevBtn">Назад</button><button class="primary" id="nextBtn" disabled>Далее</button></div>
+  </section>
+  <section id="result" class="card result hidden">
+    <div class="big">🏁</div><h1>Тест завершён!</h1><div class="score" id="score">0%</div>
+    <p id="message"></p>
+    <div class="stats">
+      <div class="stat"><b id="correctCount">0</b><span>Правильных ответов</span></div>
+      <div class="stat"><b id="wrongCount">0</b><span>Ошибок</span></div>
+      <div class="stat"><b id="totalCount">75</b><span>Всего вопросов</span></div>
+    </div>
+    <button class="primary" id="restartBtn">Пройти заново</button>
+    <div class="review"><h2>Разбор ответов</h2><p class="small">Здесь показаны твой ответ и правильный ответ на каждый вопрос.</p><div id="reviewList"></div></div>
+  </section>
+</div>
+<script src="app.js"></script>
+</body></html>
